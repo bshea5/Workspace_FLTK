@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="SceneGraph">
+      <UniqueIdentifier>{4ee94496-0fb5-4391-860b-732e8c5dee88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SceneGraph\Headers">
+      <UniqueIdentifier>{fc5638d9-dfbf-4b5b-958b-438d1b808492}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SceneGraph\Source">
+      <UniqueIdentifier>{c7d500b8-2c42-4e1e-9b49-016dcdcb6a98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LinearAlgebra_Library">
+      <UniqueIdentifier>{abee122e-5ab7-4a50-821b-a386fca1ea5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LinearAlgebra_Library\Headers">
+      <UniqueIdentifier>{4a34acb8-2330-4bcf-a7cc-5360063db65c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LinearAlgebra_Library\Source">
+      <UniqueIdentifier>{a1ed6a17-3394-4b1b-9574-3c3d46e39d32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI">
+      <UniqueIdentifier>{3655d380-2bd7-4930-b350-d6fc1f812418}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\Source">
+      <UniqueIdentifier>{cef33f2e-8625-4786-9a08-14558fc67d96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\Headers">
+      <UniqueIdentifier>{59e8775d-7c2d-44b4-9d5c-2d6d4539ba5c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="linearAlgebra\gVector3.cpp">
+      <Filter>LinearAlgebra_Library\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="linearAlgebra\gMatrix3.cpp">
+      <Filter>LinearAlgebra_Library\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="linearAlgebra\LAmain.cpp">
+      <Filter>LinearAlgebra_Library\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\fltkTest.cpp">
+      <Filter>SceneGraph\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\main.cpp">
+      <Filter>SceneGraph\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\Geometry.cpp">
+      <Filter>SceneGraph\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\Node.cpp">
+      <Filter>SceneGraph\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\Quad.cpp">
+      <Filter>SceneGraph\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\Triangle.cpp">
+      <Filter>SceneGraph\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\Lines.cpp">
+      <Filter>SceneGraph\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\Poly.cpp">
+      <Filter>SceneGraph\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\SceneWindow.cpp">
+      <Filter>SceneGraph\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\GUI_Win.cpp">
+      <Filter>GUI\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\GUI_main.cpp">
+      <Filter>GUI\Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="linearAlgebra\gMatrix3.h">
+      <Filter>LinearAlgebra_Library\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="linearAlgebra\gVector3.h">
+      <Filter>LinearAlgebra_Library\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph\Geometry.h">
+      <Filter>SceneGraph\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph\Node.h">
+      <Filter>SceneGraph\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph\Quad.h">
+      <Filter>SceneGraph\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph\Triangle.h">
+      <Filter>SceneGraph\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph\Lines.h">
+      <Filter>SceneGraph\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph\Poly.h">
+      <Filter>SceneGraph\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\GUI_Win.h">
+      <Filter>GUI\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph\SceneWindow.h">
+      <Filter>SceneGraph\Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

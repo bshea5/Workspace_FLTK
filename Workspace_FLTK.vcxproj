@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{82D5582C-28F7-4B21-A2EE-8374E2AA5AB3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Workspace_FLTK</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\B_PC\Documents\Visual Studio 2013\Projects\Workspace_FLTK\SceneGraph;C:\Users\B_PC\Documents\Visual Studio 2013\Projects\Workspace_FLTK\GUI;C:\Users\Brandon\Documents\Visual Studio 2013\Projects\Workspace_FLTK\SceneGraph;C:\Users\Brandon\Documents\Visual Studio 2013\Projects\Workspace_FLTK\GUI;C:\Users\Brandon\Documents\Visual Studio 2013\Projects\Workspace_FLTK\linearAlgebra;$(FLTK_HOME);C:\Users\B_PC\Documents\Visual Studio 2013\Projects\Workspace_FLTK\linearAlgebra</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(FLTK_HOME)/lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>fltkd.lib;fltkgld.lib;wsock32.lib;comctl32.lib;opengl32.lib;fltkjpegd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GUI\GUI_main.cpp" />
+    <ClCompile Include="GUI\GUI_Win.cpp" />
+    <ClCompile Include="linearAlgebra\gMatrix3.cpp" />
+    <ClCompile Include="linearAlgebra\gVector3.cpp" />
+    <ClCompile Include="linearAlgebra\LAmain.cpp" />
+    <ClCompile Include="SceneGraph\SceneWindow.cpp" />
+    <ClCompile Include="SceneGraph\fltkTest.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\B_PC\Documents\Visual Studio 2013\Projects\Workspace_FLTK\linearAlgebra;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="SceneGraph\Geometry.cpp" />
+    <ClCompile Include="SceneGraph\main.cpp" />
+    <ClCompile Include="SceneGraph\Node.cpp" />
+    <ClCompile Include="SceneGraph\Lines.cpp" />
+    <ClCompile Include="SceneGraph\Poly.cpp" />
+    <ClCompile Include="SceneGraph\Quad.cpp" />
+    <ClCompile Include="SceneGraph\Triangle.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GUI\GUI_Win.h" />
+    <ClInclude Include="linearAlgebra\gMatrix3.h" />
+    <ClInclude Include="linearAlgebra\gVector3.h" />
+    <ClInclude Include="SceneGraph\SceneWindow.h" />
+    <ClInclude Include="SceneGraph\Geometry.h" />
+    <ClInclude Include="SceneGraph\Node.h" />
+    <ClInclude Include="SceneGraph\Lines.h" />
+    <ClInclude Include="SceneGraph\Poly.h" />
+    <ClInclude Include="SceneGraph\Quad.h" />
+    <ClInclude Include="SceneGraph\Triangle.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
